@@ -20,7 +20,10 @@ class _MyAppState extends State<MyApp> {
           title: Text('title'),
           backgroundColor: Colors.blue,
         ),
-        body:ListView(
+        body:ListView.builder(
+          itemBuilder: (){},
+          bui
+
 
 
         )
