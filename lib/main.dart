@@ -18,7 +18,7 @@ class _MyAppState extends State<MyApp> {
       home: Scaffold(
         appBar: AppBar(
           title: Text('title'),
-          backgroundColor: Colors.blue,
+          backgroundColor: Colors.white,
         ),
         body:ListView.builder(
           itemBuilder: (){},
