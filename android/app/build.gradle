@@ -60,4 +60,6 @@ flutter {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    api 'com.google.firebase:firebase-ml-vision-face-model:20.0.2'
+    api 'com.google.firebase:firebase-ml-vision-image-label-model:20.0.2'
 }

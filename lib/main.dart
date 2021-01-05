@@ -1,7 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:machine_learning/ImplementationScreen.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
 
@@ -12,6 +16,11 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
 
+  List<String> itemList = [
+    'Detect Text',
+    'Detect Face'
+  ];
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -21,8 +30,17 @@ class _MyAppState extends State<MyApp> {
           backgroundColor: Colors.white,
         ),
         body:ListView.builder(
-          itemBuilder: (){},
-          bui
+          itemCount: itemList.length,
+          itemBuilder: (context,index){
+            return Card(
+              child: ListTile(
+                title: Text(itemList[index]),
+                onTap: (){
+                  Navigator.push(context,MaterialPageRoute(builder: (context)=>ImplementationScreen()));
+                },
+              ),
+            );
+          },
 
 
 
