@@ -154,7 +154,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:756469925315:android:32ecc63bf370774abf2976",
         "android_client_info": {
-          "package_name": "com.example.machinelearning"
+          "package_name": "com.example.machine_learning"
         }
       },
       "oauth_client": [

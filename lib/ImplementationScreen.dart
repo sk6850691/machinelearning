@@ -40,7 +40,7 @@ class _ImplementationScreenState extends State<ImplementationScreen> {
         for(TextElement element in line.elements){
           setState(() {
             result = result + ' '+ element.text;
-            
+
           });
         }
       }
